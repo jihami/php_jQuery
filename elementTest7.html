@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!--속성제어-->
+    <meta charset="UTF-8">
+    <title>elementTest7</title>
+    <style>
+    p {
+        color:blue;
+        margin:8px;
+    }
+    </style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+    <input type="text" value="some text"/>
+    <p>
+    </p>
+    <script>$("input").keyup( function () {
+        var value = $(this).val();
+        $("p").text(value);
+    }).keyup();</script>
+</body>
+</html>
